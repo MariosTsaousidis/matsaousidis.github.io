@@ -5,65 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio | Marios Tsaousidis</title>
     <style>
-        body { font-family: Arial, sans-serif; background-color: #f4f4f4; margin: 0; padding: 0; }
-        .container { max-width: 900px; margin: 50px auto; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); overflow: hidden; }
-        .header { position: relative; text-align: center; color: white; }
-        .header img { width: 100%; height: auto; }
-        .header-text { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); background: rgba(0, 0, 0, 0.5); padding: 20px; border-radius: 10px; }
-        .content { padding: 20px; text-align: center; }
-        .projects { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
-        .project { display: flex; align-items: center; background: #fff; padding: 15px; border-radius: 10px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); max-width: 600px; width: 100%; }
-        .project img { width: 150px; height: auto; border-radius: 10px; margin-right: 20px; }
-        .project-info { flex-grow: 1; text-align: left; }
-        .project a { display: inline-block; padding: 10px; background: #007bff; color: white; text-decoration: none; border-radius: 5px; margin-top: 10px; }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
+        body { background-color: #f4f4f4; margin: 0; padding: 0; overflow-y: auto; }
+        .container { max-width: 900px; margin: 0 auto; padding: 20px; }
+        .header { text-align: center; background: url('banner.jpg') no-repeat center center/cover; height: 250px; display: flex; align-items: center; justify-content: center; color: white; font-size: 28px; font-weight: bold; }
+        .projects { display: flex; flex-direction: column; align-items: center; gap: 40px; margin-top: 20px; }
+        .project { display: flex; align-items: center; background: white; border-radius: 10px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 80%; max-width: 900px; padding: 20px; }
+        .project img { width: 50%; height: auto; aspect-ratio: 1/1; object-fit: cover; border-radius: 10px; }
+        .project-info { width: 50%; text-align: center; padding: 20px; }
+        .project-info h2 { margin-bottom: 10px; }
+        .btn { background: #007bff; color: white; padding: 10px 15px; text-decoration: none; border-radius: 5px; display: inline-block; margin-top: 10px; }
+        .btn:hover { background: #0056b3; }
     </style>
 </head>
 <body>
+    <div class="header">Μάριος Τσαουσίδης - Portfolio</div>
+    
     <div class="container">
-        <div class="header">
-            <img src="banner.jpg" alt="Banner">
-            <div class="header-text">
-                <h1>Γεια σου! Είμαι ο Μάριος Τσαουσίδης</h1>
-                <p>Εδώ θα βρεις μερικά από τα projects που έχω υλοποιήσει.</p>
+        <div class="projects">
+            <div class="project">
+                <img src="project1.jpg" alt="2D Platform Game with Unity">
+                <div class="project-info">
+                    <h2>2D Platform Game with Unity</h2>
+                    <a href="https://github.com/MariosTsaousidis/2D-Platform-Game-with-Unity" class="btn">View on GitHub</a>
+                </div>
             </div>
-        </div>
-        <div class="content">
-            <h2>Projects</h2>
-            <div class="projects">
-                <div class="project">
-                    <img src="Site.png" alt="2D Platform Game with Unity">
-                    <div class="project-info">
-                        <h3>2D Platform Game with Unity</h3>
-                        <a href="https://github.com/MariosTsaousidis/2D-Platform-Game-with-Unity" target="_blank">View on GitHub</a>
-                    </div>
+            <div class="project">
+                <img src="project2.jpg" alt="Self-propelled robot with 3 wheels">
+                <div class="project-info">
+                    <h2>Self-propelled robot with 3 wheels</h2>
+                    <a href="https://github.com/MariosTsaousidis/robotic-project.git" class="btn">View on GitHub</a>
                 </div>
-                <div class="project">
-                    <img src="project2.jpg" alt="Self-propelled robot with 3 wheels">
-                    <div class="project-info">
-                        <h3>Self-propelled robot with 3 wheels</h3>
-                        <a href="https://github.com/MariosTsaousidis/robotic-project.git" target="_blank">View on GitHub</a>
-                    </div>
+            </div>
+            <div class="project">
+                <img src="project3.jpg" alt="Tracking Line Robot Car">
+                <div class="project-info">
+                    <h2>Tracking Line Robot Car</h2>
+                    <a href="https://github.com/MariosTsaousidis/Tracking-Line-Robot-Car" class="btn">View on GitHub</a>
                 </div>
-                <div class="project">
-                    <img src="project3.jpg" alt="Tracking Line Robot Car">
-                    <div class="project-info">
-                        <h3>Tracking Line Robot Car</h3>
-                        <a href="https://github.com/MariosTsaousidis/Tracking-Line-Robot-Car" target="_blank">View on GitHub</a>
-                    </div>
+            </div>
+            <div class="project">
+                <img src="project4.jpg" alt="Drag and Drop">
+                <div class="project-info">
+                    <h2>Drag and Drop</h2>
+                    <a href="https://github.com/MariosTsaousidis/Drag-and-Drop" class="btn">View on GitHub</a>
                 </div>
-                <div class="project">
-                    <img src="project4.jpg" alt="Drag and Drop">
-                    <div class="project-info">
-                        <h3>Drag and Drop</h3>
-                        <a href="https://github.com/MariosTsaousidis/Drag-and-Drop" target="_blank">View on GitHub</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="project5.jpg" alt="Cooking Site with Database">
-                    <div class="project-info">
-                        <h3>Cooking Site with Database</h3>
-                        <a href="https://github.com/MariosTsaousidis/Cooking-Site-with-Database" target="_blank">View on GitHub</a>
-                    </div>
+            </div>
+            <div class="project">
+                <img src="Site.png" alt="Cooking Site with Database">
+                <div class="project-info">
+                    <h2>Cooking Site with Database</h2>
+                    <a href="https://github.com/MariosTsaousidis/Cooking-Site-with-Database" class="btn">View on GitHub</a>
                 </div>
             </div>
         </div>
